@@ -1,5 +1,7 @@
 export type Lang = 'en' | 'es'
 
+export const PUBLIC_CARD_URL = 'https://next-studio-digital-card.vercel.app'
+
 export const profile = {
   slug: 'richard',
   name: 'Richard Vélez',
@@ -19,7 +21,7 @@ export const profile = {
   website: 'https://www.nextstudio.agency',
   bookingUrl: 'https://www.nextstudio.agency/contact',
   location: 'New York, NY',
-  cardUrl: 'https://card.nextstudio.agency',
+  cardUrl: PUBLIC_CARD_URL,
   photo: richardPhoto,
   logo: nextStudioLogo,
 }

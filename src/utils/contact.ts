@@ -9,7 +9,8 @@ export function downloadVCard() {
     `TITLE:${profile.title.en}`,
     `TEL;TYPE=CELL:${profile.phoneE164}`,
     `EMAIL:${profile.email}`,
-    `URL:${profile.website}`,
+    `URL;TYPE=WORK:${profile.website}`,
+    `URL;TYPE=PROFILE:${profile.cardUrl}`,
     `ADR;TYPE=WORK:;;${profile.location};;;;`,
     'END:VCARD',
   ].join('\r\n')

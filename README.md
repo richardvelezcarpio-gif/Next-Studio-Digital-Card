@@ -37,8 +37,8 @@ npm run build
 2. Replace the text brand mark with the official Next Studio logo asset.
 3. Confirm the final email and social links in `src/data/profile.ts`.
 4. Deploy to Vercel.
-5. Point `card.nextstudio.agency` to the Vercel project.
-6. Program an NFC card with the permanent URL, e.g. `https://card.nextstudio.agency/en`.
+5. The temporary public card URL is `https://next-studio-digital-card.vercel.app`.
+6. Program an NFC card with the temporary public URL until the custom domain is configured.
 
 ## Phase 4 later
 

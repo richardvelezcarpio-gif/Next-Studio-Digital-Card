@@ -17,7 +17,7 @@ const serviceIcons = { Globe2, PanelsTopLeft, Bot, QrCode, Printer }
 export function DigitalCardPage({ lang }: { lang: Lang }) {
   const t = copy[lang]
   const [toast, setToast] = useState('')
-  const shareUrl = typeof window === 'undefined' ? `${profile.cardUrl}/${lang}` : window.location.href
+  const shareUrl = profile.cardUrl
   const whatsappText = lang === 'es'
     ? 'Hola Richard, encontré tu información a través de tu tarjeta digital.'
     : 'Hi Richard, I found you through your digital business card.'
