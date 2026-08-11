@@ -27,8 +27,9 @@ button:focus-visible, a:focus-visible { outline:3px solid #a6e3ff; outline-offse
 .brand-mark span { font-weight:800; }
 .brand-mark strong { font-weight:300; }
 .language-switch { display:flex; padding:4px; border:1px solid rgba(255,255,255,.16); border-radius:999px; background:rgba(2,18,42,.25); }
-.language-switch a { padding:8px 11px; border-radius:999px; font-size:12px; font-weight:800; color:#a9c8eb; }
+.language-switch a { min-width:34px; min-height:34px; padding:6px; display:grid; place-items:center; border-radius:999px; font-size:12px; font-weight:800; color:#a9c8eb; }
 .language-switch a.active { background:white; color:#0c4f9d; }
+.language-flag { width:20px; height:20px; border-radius:50%; object-fit:cover; box-shadow:0 1px 3px rgba(1, 16, 40, .28); }
 .hero-profile { display:grid; grid-template-columns:132px 1fr; gap:28px; align-items:center; margin:54px 0 34px; position:relative; z-index:1; }
 .avatar { width:132px; height:132px; border-radius:32px; overflow:hidden; background:#b7d6e9; border:5px solid rgba(255,255,255,.16); box-shadow:0 18px 42px rgba(0,22,54,.38); }
 .avatar img { width:100%; height:100%; object-fit:cover; object-position:center 23%; }
