@@ -1,6 +1,6 @@
 import nextStudioLogo from '../assets/projects/next-studio-logo.png'
 import nextPrintLogo from '../assets/projects/nextprint-logo.png'
-import type { Lang } from './profile'
+import { PUBLIC_CARD_URL, type Lang } from './profile'
 
 export type Project = {
   id: string
@@ -44,5 +44,10 @@ export const projects: Project[] = [
     id: 'construction-business-manager', name: 'Construction Business Manager', category: { en: 'Construction Operations Platform', es: 'Plataforma de Operaciones de Construcción' },
     description: { en: 'A business management platform for projects, work orders, schedules, crews and change orders.', es: 'Una plataforma de gestión para proyectos, órdenes de trabajo, calendarios, equipos y cambios de obra.' },
     cta: { en: 'Visit Platform', es: 'Ver Plataforma' }, url: 'https://construction-business-manager.vercel.app', featured: true,
+  },
+  {
+    id: 'next-studio-digital-card', name: 'Next Studio Digital Card', category: { en: 'Digital Business Card / PWA', es: 'Tarjeta Digital de Negocio / PWA' },
+    description: { en: 'A premium digital business card with direct contact actions, bilingual content, QR sharing and installable app support.', es: 'Una tarjeta digital premium con acciones de contacto directo, contenido bilingüe, QR y soporte para instalarse como aplicación.' },
+    cta: { en: 'Open Digital Card', es: 'Ver Tarjeta Digital' }, url: `${PUBLIC_CARD_URL}/en`, featured: true,
   },
 ]
