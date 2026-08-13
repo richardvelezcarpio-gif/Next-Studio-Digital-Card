@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { AtSign, Bot, ExternalLink, Globe2, Mail, Phone, Printer, QrCode, Save, Share2, MessageCircle, PanelsTopLeft } from 'lucide-react'
+import { AtSign, Bot, ContactRound, ExternalLink, Globe2, Mail, Phone, Printer, QrCode, Save, Share2, MessageCircle, PanelsTopLeft } from 'lucide-react'
 import type { Lang } from '../data/profile'
 import { profile } from '../data/profile'
 import { projects } from '../data/projects'
@@ -12,7 +12,7 @@ import { QRCodeCard } from '../components/QRCodeCard'
 import { downloadVCard, shareCard } from '../utils/contact'
 import nextPrintLogo from '../assets/projects/nextprint-logo.png'
 
-const serviceIcons = { Globe2, PanelsTopLeft, Bot, QrCode, Printer }
+const serviceIcons = { Globe2, PanelsTopLeft, Bot, QrCode, Printer, ContactRound }
 
 export function DigitalCardPage({ lang }: { lang: Lang }) {
   const t = copy[lang]
@@ -72,7 +72,7 @@ export function DigitalCardPage({ lang }: { lang: Lang }) {
         <p className="eyebrow">{t.servicesEyebrow}</p><h2>{t.servicesTitle}</h2>
         <div className="service-grid">{services.map((service) => {
           const ServiceIcon = serviceIcons[service.icon]
-          return <article className="service-card" key={service.title.en}><ServiceIcon className="service-icon" aria-hidden="true" /><h3>{service.title[lang]}</h3><p>{service.description[lang]}</p></article>
+          return <article className="service-card service-card--image" key={service.title.en}><img className="service-photo" src={service.image} alt="" /><div className="service-content"><ServiceIcon className="service-icon" aria-hidden="true" /><h3>{service.title[lang]}</h3><p>{service.description[lang]}</p></div></article>
         })}</div>
       </section>
 
